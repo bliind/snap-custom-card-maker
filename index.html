@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#232323">
+    <title>Custom Card Maker</title>
+    <link rel="stylesheet" href="fonts.css?v=40256">
+    <link rel="stylesheet" href="style.css?v=40256">
+    <script src="index.js?v=40256"></script>
+</head>
+<body>
+    <canvas id="canvas" width="544" height="700"></canvas>
+
+    <div class="container grid">
+        <div class="group">
+            <div class="group instructions">
+                <b>Instructions</b>
+                <ul>
+                    <li>Select your Art</li>
+                    <li>Use the slider to resize the image to fit</li>
+                    <li>Click and drag art to reposition it</li>
+                    <li>Fill in the card details</li>
+                    <li>Click Download or Right Click &amp; Save</li>
+                    <li>You don't need to screenshot, I make it easy</li>
+                </ul>
+            </div>
+
+            <div class="group">
+                <input type="file" class="file-input" id="bottom-layer" name="art" />
+                <label for="bottom-layer" class="btn" data-label="Bottom Layer Image">
+                    Pick Bottom Layer Image
+                </label>
+                <label>(Under Frame)</label>
+            </div>
+
+            <div class="group">
+                <label for="bottom-layer-size">Resize Bottom Layer</label>
+                <input type="range" class="resizer" id="bottom-layer-size" min="1" max="200" value="45" />
+            </div>
+
+            <div class="group">
+                <input type="file" class="file-input" id="top-layer" name="art2" />
+                <label for="top-layer" class="btn" data-label="Top Layer Image">
+                    Pick Top Layer Image
+                </label>
+                <label>(Over Frame)</label>
+            </div>
+
+            <div class="group">
+                <label for="top-layer-size">Resize Top Layer</label>
+                <input type="range" class="resizer" id="top-layer-size" min="1" max="200" value="45" />
+            </div>
+
+            <div class="group">
+                <label for="card-frame">Card Quality</label>
+                <select class="input" id="card-frame">
+                    <option>Common</option>
+                    <option>Uncommon</option>
+                    <option>Rare</option>
+                    <option>Epic</option>
+                    <option>Legendary</option>
+                    <option>Ultra</option>
+                    <option>Infinite</option>
+                </select>
+            </div>
+
+            <div class="group">
+                <label>Transparent Background</label>
+                <input type="checkbox" class="input" id="card-background">
+                <label for="card-background"></label>
+            </div>
+        </div>
+
+        <div class="group">
+            <div class="group grid">
+                <div class="group energy">
+                    <label for="energy-input">Energy</label>
+                    <input type="text" class="input" id="energy-input" />
+                </div>
+                
+                <div class="group power">
+                    <label for="power-input">Power</label>
+                    <input type="text" class="input" id="power-input" />
+                </div>
+            </div>
+            
+            <div class="group">
+                <label for="name-input">Name</label>
+                <textarea class="input" id="name-input" rows="2"></textarea>
+            </div>
+
+            <div class="group">
+                <label for="name-size">Name Size</label>
+                <input type="range" class="resizer" id="name-size" min="14" max="200" value="80" />
+            </div>
+
+            <div class="group">
+                <label for="font-input">Name Font</label>
+                <select class="input" id="font-input">
+                    <option>BadaboomBB</option>
+                    <option>BerlinSansDemiBold</option>
+                    <option>Komika Hand</option>
+                    <option>Komika Slick</option>
+                    <option>Adam Warren Pro</option>
+                    <option>Adam Warren Pro Bold</option>
+                    <option>Feast of Flesh BB</option>
+                </select>
+            </div>
+
+            <div class="group">
+                <label for="name-color">Name Color</label>
+                <input class="input" type="color" id="name-color" value="#FFFFFF">
+            </div>
+
+            <div class="group">
+                <label for="desc-input">Description</label>
+                <textarea class="input" id="desc-input" rows="5"></textarea>
+            </div>
+
+            <div class="group">
+                <button class="btn" id="download-button">Download Card</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

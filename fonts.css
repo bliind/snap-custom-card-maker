@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('fonts/HelveticaNeue.otf');
+}
+@font-face {
+    font-family: 'HelveticaNeueBold';
+    src: url('fonts/HelveticaNeueBold.otf')
+}
+@font-face {
+    font-family: 'UltimatumBoldItalic';
+    src: url('fonts/UltimatumBoldItalic.otf')
+}
+@font-face {
+    font-family: 'BerlinSansDemiBold';
+    src: url('fonts/BerlinSansDemiBold.ttf')
+}
+@font-face {
+    font-family: 'BadaboomBB';
+    src: url('fonts/BadaboomBB_Reg.otf')
+}
+@font-face {
+    font-family: 'Komika Hand';
+    src: url('fonts/KomikaHand.ttf')
+}
+@font-face {
+    font-family: 'Komika Slick';
+    src: url('fonts/KomikaSlick.ttf')
+}
+@font-face {
+    font-family: 'Adam Warren Pro';
+    src: url('fonts/adamwarrenpro.ttf')
+}
+@font-face {
+    font-family: 'Adam Warren Pro Bold';
+    src: url('fonts/adamwarrenpro-bold.ttf')
+}
+@font-face {
+    font-family: 'Feast of Flesh BB';
+    src: url('fonts/fofbb_reg.otf')
+}
+@font-face {
+    font-family: 'ElephantMen';
+    src: url('fonts/CCElephantmenTall_W10_Italic.ttf')
+}
